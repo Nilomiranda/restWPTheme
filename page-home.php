@@ -7,7 +7,7 @@
 	<section class="container">
 		<h2 class="subtitulo"><?php the_title() ?></h2>
 		<?php if ( have_rows('menu_category') ) : while ( have_rows('menu_category') ) : the_row(); ?>
-			<div class="menu-item grid-8">
+			<div class="menu-prato grid-8">
 					<h2><?php the_sub_field('category_title') ?></h2>
 					<ul>
 						<?php if ( have_rows('category_content') ) : while ( have_rows('category_content') ) : the_row(); ?>
