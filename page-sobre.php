@@ -17,12 +17,10 @@
 	</div>
 
 	<div class="grid-8">
-		<h2><?php the_field('title_hist') ?></h2>
-		<?php the_field('hist_content') ?>
-		<h2><?php the_field('vision_title') ?></h2>
-		<?php the_field('vision_content') ?>
-		<h2><?php the_field('value_title') ?></h2>
-		<?php the_field('value_content') ?>
+		<?php if ( have_rows('about_content') ) : while ( have_rows('about_content') ) : the_row(); ?>
+			<h2><?php the_sub_field('about_title') ?></h2>
+			<?php the_sub_field('about_desc') ?>
+		<?php endwhile; endif?>
 	</div>
 </section>
 <?php endwhile; else: ?>
