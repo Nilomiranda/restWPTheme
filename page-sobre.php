@@ -3,6 +3,8 @@
 	/**
 	 * This section contains advanced custom fields settings
 	 * You may identify this fields by the code 'the_field()'
+	 * Or if the ACF is using repeater you may identify by a loop
+	 * with have_rows() and the_sub_field()
 	 */
 ?>
 
